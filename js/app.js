@@ -2,6 +2,8 @@ const items = document.querySelector('#items')
 const templateCard = document.querySelector('#template-card').content
 /* console.log(templateCard) */
 const fragment = document.createDocumentFragment()
+let carrito = { }
+
 
 document.addEventListener('DOMContentLoaded', (e) => {
 	fetchData()
@@ -40,5 +42,31 @@ let pintarCards = (data) => {
 }
 
 const agregarAlCarrito = (e) => {
-	console.log(e.target)
+	// console.log(e.target)
+	// console.log(e.target.classList.contains('bnt-dark'))
+	if(e.target.classList.contains('btn-dark')) {
+		setCarrito(e.target.parentElement)
+	}
+	e.stopPropagation()
+}
+
+const setCarrito = (objeto) => {
+	// console.log(objeto)
+	const producto = {
+		id: objeto.querySelector('.btn-dark').dataset.id,
+		title: objeto.querySelector('.card-title').textContent,
+		precio: objeto.querySelector('.card-text').textContent,
+		cantidad: 1,
+	}
+	
+	if (carrito.hasOwnProperty(producto.id)) {
+		producto.cantidad = carrito[producto.id].cantidad + 1
+	}
+
+	carrito[producto.id] = { ... producto }
+
+	
+	console.log(carrito)
+	
+
 }
