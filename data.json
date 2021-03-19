@@ -3,36 +3,36 @@
       "precio": 500,
       "id": 1,
       "title": "Café",
-      "thumbnailUrl": "https://picsum.photos/id/0/600"
+      "thumbnailUrl": "https://images.pexels.com/photos/1749303/pexels-photo-1749303.jpeg?cs=srgb&dl=pexels-arshad-sutar-1749303.jpg&fm=jpg"
     },
     {
       "precio": 300,
       "id": 2,
       "title": "Pizza",
-      "thumbnailUrl": "https://picsum.photos/id/10/600"
+      "thumbnailUrl": "https://images.pexels.com/photos/4109077/pexels-photo-4109077.jpeg?cs=srgb&dl=pexels-polina-tankilevitch-4109077.jpg&fm=jpg"
     },
     {
       "precio": 100,
       "id": 3,
       "title": "Agua",
-      "thumbnailUrl": "https://picsum.photos/id/20/600"
+      "thumbnailUrl": "https://images.pexels.com/photos/1458671/pexels-photo-1458671.jpeg?cs=srgb&dl=pexels-daria-shevtsova-1458671.jpg&fm=jpg"
     },
     {
       "precio": 50,
       "id": 4,
       "title": "Sandía",
-      "thumbnailUrl": "https://picsum.photos/id/30/600"
+      "thumbnailUrl": "https://images.pexels.com/photos/1337825/pexels-photo-1337825.jpeg?cs=srgb&dl=pexels-bruno-scramgnon-1337825.jpg&fm=jpg"
     },
     {
       "precio": 10,
       "id": 5,
       "title": "Mango",
-      "thumbnailUrl": "https://picsum.photos/id/40/600"
+      "thumbnailUrl": "https://images.pexels.com/photos/5217960/pexels-photo-5217960.jpeg?cs=srgb&dl=pexels-anna-shvets-5217960.jpg&fm=jpg"
     },
     {
       "precio": 150,
       "id": 6,
       "title": "Chela",
-      "thumbnailUrl": "https://picsum.photos/id/50/600"
+      "thumbnailUrl": "https://images.pexels.com/photos/667986/pexels-photo-667986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     }
   ]
