@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
 	fetchData()
 })
 
+items.addEventListener('click', e => {
+	agregarAlCarrito(e)
+})
 
 const fetchData = async () => {
 	try {
@@ -26,9 +29,16 @@ let pintarCards = (data) => {
 		templateCard.querySelector('.card-text').textContent = producto.precio
 		templateCard.querySelector('.card-img-top').setAttribute('src', producto.thumbnailUrl)
 		templateCard.querySelector('.card-img-top').setAttribute('alt', producto.title)
+		templateCard.querySelector('.btn-dark').dataset.id = producto.id
+/* 		console.log(templateCard.querySelector('.btn-dark').getAttribute('data-id')) */
+		
 		const clone = templateCard.cloneNode(true)
 
 		fragment.appendChild(clone)
 	})
 	items.appendChild(fragment)
+}
+
+const agregarAlCarrito = (e) => {
+	console.log(e.target)
 }
