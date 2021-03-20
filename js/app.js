@@ -12,6 +12,12 @@ let carrito = { }
 
 document.addEventListener('DOMContentLoaded', (e) => {
 	fetchData()
+	/* local storage */
+	if (localStorage.getItem('carrito')) {
+		carrito = JSON.parse(localStorage.getItem('carrito'))
+		pintarCarrito()
+	}
+
 })
 
 itemCarrito.addEventListener('click', e => {
@@ -95,6 +101,8 @@ const pintarCarrito = () => {
 	itemCarrito.appendChild(fragment)
 
 	pintarFooter()
+	/*local storage  */
+	localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
 const pintarFooter = () => {
