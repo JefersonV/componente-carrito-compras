@@ -30,7 +30,7 @@ cards.addEventListener('click', e => {
 
 const fetchData = async () => {
 	try {
-		const res = await fetch('../data.json')
+		const res = await fetch('http://my-json-server.typicode.com/JefersonV/data-carrito-compras/cards-content')
 		const data = await res.json()
 		pintarCards(data)
 	} catch (error) {
